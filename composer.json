@@ -23,13 +23,13 @@
     },
     "require": {
         "php": "^7.3||^8",
-        "symfony/framework-bundle": "^4.3||^5.0"
+        "symfony/framework-bundle": "^4.3||^5.0||^6"
     },
     "require-dev": {
         "phpunit/phpunit": "^6.4",
         "phpunit/php-code-coverage": "^5.0",
-        "symfony/phpunit-bridge": "^4.3||^5.0",
-        "symfony/yaml": "^4.3||^5.0"
+        "symfony/phpunit-bridge": "^4.3||^5.0||^6",
+        "symfony/yaml": "^4.3||^5.0||^6"
     },
     "extra": {
         "branch-alias": {
