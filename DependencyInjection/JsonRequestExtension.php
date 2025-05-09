@@ -27,7 +27,7 @@ class JsonRequestExtension extends ConfigurableExtension
     /**
      * {@inheritdoc}
      */
-    public function getAlias()
+    public function getAlias(): string
     {
         return 'sb_json_request';
     }
