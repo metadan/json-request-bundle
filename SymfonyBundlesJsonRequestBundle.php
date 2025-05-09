@@ -9,7 +9,7 @@ class SymfonyBundlesJsonRequestBundle extends Bundle
     /**
      * {@inheritdoc}
      */
-    public function getContainerExtension()
+    public function getContainerExtension(): ?ExtensionInterface
     {
         return new DependencyInjection\JsonRequestExtension();
     }
