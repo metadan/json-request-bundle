@@ -33,7 +33,7 @@ class RequestTransformerListener implements RequestListenerInterface
      */
     private function isAvailable(Request $request): bool
     {
-        return 'json' === $request->getContentType() && $request->getContent();
+        return 'json' === $request->getContentTypeFormat() && $request->getContent();
     }
 
     /**
