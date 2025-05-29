@@ -13,12 +13,12 @@ class JsonRequestExtension extends ConfigurableExtension
      */
     protected function loadInternal(array $mergedConfig, ContainerBuilder $container): void
     {
-        $listener = new Definition($configs['listener']['request_transformer']);
+        $listener = new Definition($mergedConfig['listener']['request_transformer']);
 
         $listener->addTag('kernel.event_listener', [
             'event' => 'kernel.request',
             'method' => 'onKernelRequest',
-            'priority' => $configs['listener']['priority'],
+            'priority' => $mergedConfig['listener']['priority'],
         ]);
 
         $container->setDefinition('sb_json_request.request_transformer', $listener);
