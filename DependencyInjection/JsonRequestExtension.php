@@ -11,7 +11,7 @@ class JsonRequestExtension extends ConfigurableExtension
     /**
      * {@inheritdoc}
      */
-    protected function loadInternal(array $configs, ContainerBuilder $container)
+    protected function loadInternal(array $mergedConfig, ContainerBuilder $container): void
     {
         $listener = new Definition($configs['listener']['request_transformer']);
 
